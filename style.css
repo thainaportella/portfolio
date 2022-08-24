@@ -7,9 +7,11 @@
 :root {
   font-size: 62.5%; /* 1rem = 10px */
 
-  --pri: hsl(261, 21%, 13%);
-  --sec: hsl(48, 100%, 67%);
-  --ter: hsl(48, 100%, 75%);
+  --pri: hsl(271, 11%, 38%);
+  --sec: hsl(32, 87%, 81%);
+  --ter: hsl(32, 79%, 75%);
+  --light: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 0%);
 }
 
 html {
@@ -182,7 +184,7 @@ section#about {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  color: white;
+  color: var(--light);
   opacity: 1;
 }
 
@@ -285,7 +287,7 @@ section#contact {
 
 #contact > h1 {
   font-size: 2.5rem;
-  color: white;
+  color: var(--light);
   margin-bottom: 3rem;
   line-height: 1.2rem;
 }
@@ -294,7 +296,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   font-size: 2.5rem;
-  color: white;
+  color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +386,7 @@ a > img {
 /* ---------------- Keyframes ---------------- */
 @keyframes text_reveal {
   100% {
-    color: white;
+    color: var(--light);
   }
 }
 
