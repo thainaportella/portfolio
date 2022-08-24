@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --pri: hsl(261, 21%, 13%);
+  --sec: hsl(48, 100%, 67%);
+  --ter: hsl(48, 100%, 75%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--pri);
+  background-image: url(./assets/dust.png);
+  background-size: 113rem;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+html, body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pri);
+}
+
+button {
+  background-color: var(--sec);
+  border: none;
+  width: 13rem;
+  height: 5rem;
+  border-radius: 1rem;
+  color: var(--pri);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-block: 1rem;
+}
+
+button:hover {
+  background-color: var(--ter);
+  transition: 1s;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* ---------------- NAV ---------------- */
+#navigation {
+  width: 100%;
+  background-color: var(--sec);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logo {
+  margin-left: 5rem;
+  font-size: 2rem;
+  padding-block: 1rem;
+  font-weight: bold;
+  color: var(--pri);
+}
+
+.menu {
+  display: flex;
+  gap: 8rem;
+  margin-right: 5rem;
+  font-size: 2rem;
+  padding-block: 1rem;
+  font-weight: bold;
+  color: var(--pri);
+}
+
+/* ---------------- HEADER ---------------- */
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-block: 22rem;
+}
+
+.firstLine {
+  font-size: 4rem;
+}
+
+.secondLine {
+  color: var(--sec);
+  font-size: 3.5rem;
+}
+
+.thirdLine {
+  font-size: 2.5rem;
+}
+
+.titles h1 {
+  display: block;
+  width: fit-content;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.titles .firstLine {
+  animation-delay: .8s;
+}
+
+.titles .secondLine {
+  animation: text_reveal_name .5s ease forwards;
+  animation-delay: 1.8s;
+}
+
+.titles .thirdLine {
+  animation-delay: 2.8s;
+}
+
+.titles > h1 > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  animation: text_reveal_box 1s ease;
+  animation-delay: .5s;
+  background-color: var(--sec);
+}
+
+.titles .firstLine span{
+  animation-delay: .5s;
+}
+
+.titles .secondLine span{
+  animation-delay: 1.5s;
+}
+
+.titles .thirdLine span{
+  animation-delay: 2.5s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50rem;
+}
+
+
+.portfolioButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--sec);
+  font-size: 3rem;
+}
+
+.portfolioButton:hover {
+  color: var(--ter);
+  font-weight: bold;
+}
+
+/* ---------------- ABOUT ---------------- */
+
+section#about {
+  padding-block: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: white;
+  opacity: 1;
+}
+
+.intro,
+picture > img {
+  width: 25rem;
+}
+
+#about > div.intro > h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--sec);
+}
+
+#about > div.intro > p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+#about > div.intro > div {
+  text-align: center;
+}
+
+/* ---------------- MAIN ---------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 10rem;
+  gap: 5rem;
+}
+
+#artigos {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 2rem;
+  background-color: var(--sec);
+  color: var(--pri);
+  width: 55%;
+  padding: 3rem;
+}
+
+article {
+  width: 100%;
+}
+
+article > h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--pri);
+}
+
+article > p {
+  text-align: justify;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 1rem;
+}
+
+article > a {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+article > a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section#artigos > figure {
+  width: 100%;
+  object-fit: cover;
+}
+
+section#artigos > figure > img {
+  max-width: 100%;
+  border-radius: 2rem;
+  transition: 0.5s ease transform;
+}
+
+section#artigos >figure > img:hover {
+  transform: scale(0.9);
+}
+
+#artigos:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+section#contact {
+  padding-block: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact > h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 3rem;
+  line-height: 1.2rem;
+}
+
+h2 {
+  width: 100vw;
+  height: 100vh;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 45rem;
+  font-size: 1.5rem
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+form label {
+  color: var(--sec);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  font: inherit;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: border-color;
+  box-shadow: 0.2s;
+}
+
+form textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
+  outline: none;
+  border-color: var(--sec);
+  box-shadow: 0 0 0 1.5px var(--sec);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+#footer {
+  background-color: var(--sec);
+  color: var(--pri);
+  z-index: 10;
+  padding-bottom: 2.5rem;
+}
+
+.social > h1 {
+  font-size: 2rem;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30rem;
+  align-items: center;
+  padding-block: 2.5rem;
+}
+
+a > img {
+  width: 2rem;
+}
+
+.social > p,
+.social > p > a {
+  margin: 1rem;
+}
+
+#footer > p {
+  text-align: center;
+}
+
+
+/* ---------------- Keyframes ---------------- */
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+    color: var(--sec);
+    font-weight: 500px;
+  }
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}

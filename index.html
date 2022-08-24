@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Thainá's Portfolio</title>
+</head>
+<body>
+  <!--------------------- NAV ------------------->
+  <nav id="navigation">
+      <p class="logo">{ "PORTFOLIO":"THAINÁ" }</p>
+      <ul class="menu">
+        <li><a href="#">INÍCIO</a></li>
+        <li><a href="#about">SOBRE</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTATO</a></li>
+      </ul>
+  </nav>
+  <!--------------------- HEADER ------------------->
+
+  <header id="header">
+    <div class="titles">
+      <h1 class="firstLine">Olá,<span></span></h1>
+      <h1 class="secondLine">Eu sou a Thainá<span></span></h1>
+      <h1 class="thirdLine">e esse é meu portfólio<span></span></h1>
+    </div>  
+    <nav class="buttons">
+
+        <button class="aboutButton"><a href="#about">SOBRE</a></button>
+        <button class="cvButton"><a href="./assets/CURRICULO_THAINA_RODRIGUES.pdf" download>CV</a></button>
+        <button class="contactButton"><a href="#contact">CONTATO</a></button>
+    </nav>
+    <a class="portfolioButton" href="#portfolio">IR PARA PORTFOLIO</a>
+  </header>
+
+  <!--------------------- ABOUT ------------------->
+
+  <section id="about">
+    <div class="intro">
+      <h1>Sobre mim</h1>
+      <p>Iniciei meus estudos de programação em abril de 2022. Comecei acompanhando projetos online de front-end, e curti tanto que em junho comecei o curso de ADS. De lá pra cá, consegui uma base de conceitos dentro da programação, e agora estou partindo para o desenvolvimento dos meus próprios projetos e encarando novos desafios que me ajudem a crescer. <br><br>
+      </p>
+      <div>
+        <a href="https://www.linkedin.com/in/thain%C3%A1-rodrigues-44080a203/" class="linkedIn" target="_blank"><img src="./assets/in-about.png" alt="Logo do LinkedIn."></a>
+        <a href="https://github.com/thainaportella/" class="github" target="_blank"><img src="./assets/github-about.png" alt="Logo do Github."></a>
+        <a href=mailto:mr.thaaina@gmail.com"><img src="./assets/email-about.png" alt="Logo do gmail."></a>
+      </div>
+    </div>
+    <picture>
+      <img src="./assets/profile-pic (2).png">
+    </picture>
+  </section>
+
+  <!--------------------- MAIN ------------------->
+
+  <main id="portfolio">
+    
+    <section id="artigos">
+      <article>
+        <h1>PORTFOLIO</h1>
+        <p>Projeto feito para praticar HTML e CSS com responsividade e pra expor meus demais projetos. Foi o primeiro projeto que fiz completamente sozinha com essas duas tecnologias.<br><br></p>
+        <a href="https://github.com/thainaportella/portfolio" target="_blank">LINK REPOSITÓRIO</a>
+      </article>
+      <figure>
+        <img src="./assets/portfolio.png" alt="">
+      </figure>
+    </section>
+    
+    <section id="artigos">
+      <article>
+        <h1>DOCTOR CARE</h1>
+        <p>Projeto front-end realizado com a Next Level Week, da Rocketseat, em abril de 2022. Foram utilizados HTML, CSS e Javascript com responsividade.</p><br><br>
+        <a href="https://github.com/thainaportella/hospitalLandingPage" target="_blank">LINK REPOSITÓRIO</a>
+      </article>
+      <figure>
+        <img src="./assets/doctorcare.png" alt="">
+      </figure>
+    </section>
+    
+    <section id="artigos">
+      <article>
+        <h1>INSCRIÇÃO EM NEWSLETTER</h1>
+        <p>Esse projeto foi realizado durante o curso Tech Academy, da StartSe. Foi utilizado HTML, CSS e Javascript com responsividade.</p><br><br>
+        <a href="https://github.com/thainaportella/newsletterSubscription" target="_blank">LINK REPOSITÓRIO</a>
+      </article>
+      <figure> 
+        <img src="./assets/newsletter.png" alt="">
+      </figure>
+    </section>
+
+    <section id="artigos">
+      <article>
+        <h1>ENVIO DE MENSAGENS</h1>
+        <p>Meu primeiro projeto de API rest e conceitos de Programação Orientada a Objetos. Foi realizado durante curso Tech Academy, da StartSe, com Javascript e o framework Node.js. Consiste em uma API que faz envio automático de mensagens para os números cadastrados na Twilio.</p><br><br>
+        <a href="https://github.com/thainaportella/apiRestMessageSending" target="_blank">LINK REPOSITÓRIO</a>
+      </article>
+      <figure>
+        <img src="./assets/apirest.png" alt="">
+      </figure>
+    </section>
+
+  </main>
+
+  <!------------------ CONTACT -------------------->
+
+  <section id="contact">
+    <h1>Precisa de ajuda com seu projeto? Chama aí!</h1>
+    <form action="https://formsubmit.co/mr.thaaina@gmail.com" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Seu nome" id="name" required>
+      
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="Seu email" id="email" required>
+      
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
+
+      <div class="box">
+      <div class="box"></div>
+      <div class="box"></div>
+      
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!------------------ FOOTER -------------------->
+
+  <footer id="footer">
+    <nav class="footerNav">
+      <div class="social">
+        <h1>SOCIAL MEDIA</h1>
+        <p><a href="https://www.linkedin.com/in/thain%C3%A1-rodrigues-44080a203/" class="linkedIn" target="_blank"><img src="./assets/linkedin.png" alt="Logo do LinkedIn."></a> <a href="https://github.com/thainaportella/" class="github" target="_blank"><img src="./assets/github.png" alt="Logo do Github."></a> <a href=mailto:mr.thaaina@gmail.com"><img src="./assets/gmail.png" alt="Logo do gmail."></a></p>
+      </div>
+    </nav>
+
+    <p>COPYRIGHT @ 2022 THAINÁ'S PORTFOLIO, ALL RIGHTS RESERVED</p>
+
+  </footer>
+</body>
+</html>
