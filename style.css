@@ -93,6 +93,10 @@ li {
   transition: 1.5s;
 }
 
+#navigation span {
+  visibility: hidden;
+}
+
 /* ---------------- HEADER ---------------- */
 #header {
   width: 100%;
@@ -183,7 +187,6 @@ li {
 }
 
 /* ---------------- ABOUT ---------------- */
-
 section#about {
   padding-block: 20rem;
   display: flex;
