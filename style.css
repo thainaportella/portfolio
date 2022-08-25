@@ -224,7 +224,7 @@ main {
   gap: 5rem;
 }
 
-#artigos {
+.artigos {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -262,22 +262,22 @@ article > a:hover {
   font-weight: bold;
 }
 
-section#artigos > figure {
+section.artigos > figure {
   width: 100%;
   object-fit: cover;
 }
 
-section#artigos > figure > img {
+section.artigos > figure > img {
   max-width: 100%;
   border-radius: 2rem;
   transition: 0.5s ease transform;
 }
 
-section#artigos >figure > img:hover {
+section.artigos >figure > img:hover {
   transform: scale(0.9);
 }
 
-#artigos:nth-child(even) {
+.artigos:nth-child(even) {
   flex-direction: row-reverse;
 }
 

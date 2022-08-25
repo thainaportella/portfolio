@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+  /* ---------------- RESET ---------------- */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .artigos:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-right: 0;
+  }
+
+  /* ---------------- NAV ---------------- */
+  #navigation {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+  }
+
+  #navigation .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  /* ---------------- HEADER ---------------- */
+  #header {
+    padding-block: 13rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'A'
+    'B'
+    'C'
+  }
+
+  .titles {
+    grid-area: A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    grid-area: B;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .portfolioButton {
+    grid-area: C;
+  }
+
+  /* ---------------- ABOUT ---------------- */
+  section#about {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  section#about .intro {
+    width: 90%;
+    padding-inline: 0;
+  }
+
+  /* ---------------- MAIN ---------------- */
+  main {
+    padding-inline: 2rem;
+    padding-block: 6rem;
+  }
+
+  main .artigos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------------- CONTATO ---------------- */
+
+  section#contact {
+    padding-block: 10rem;
+    padding-inline: 2rem;
+  }
+
+  #contact h1 {
+    text-align: center;
+    line-height: 2.5rem;
+  }
+
+}
