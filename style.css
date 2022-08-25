@@ -64,27 +64,33 @@ li {
   width: 100%;
   background-color: var(--sec);
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   position: fixed;
   z-index: 200;
 }
 
-.logo {
-  margin-left: 5rem;
+.menu {
+  display: flex;
+  gap: 3rem;
+  margin-right: 5rem;
   font-size: 2rem;
-  padding-block: 1rem;
   font-weight: bold;
+}
+
+.menu li {
+  padding-block: 1rem;
+  padding-inline: 2rem;
   color: var(--pri);
 }
 
-.menu {
-  display: flex;
-  gap: 8rem;
-  margin-right: 5rem;
-  font-size: 2rem;
-  padding-block: 1rem;
-  font-weight: bold;
-  color: var(--pri);
+.menu li:hover a {
+  color: var(--sec);
+}
+
+.menu li:hover {
+  background-color: var(--pri);
+  cursor: pointer;
+  transition: 1.5s;
 }
 
 /* ---------------- HEADER ---------------- */
