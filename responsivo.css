@@ -54,6 +54,11 @@
   #navigation .menu li {
     padding-block: 1.5rem;
   }
+  
+  #navigation .menu li a {
+    display: block;
+    padding-block: inherit;
+  }
 
   /*---------------- ao clicar ----------------*/
   #navigation .clicked {
