@@ -188,7 +188,8 @@ li {
 
 /* ---------------- ABOUT ---------------- */
 section#about {
-  padding-block: 20rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,6 +215,33 @@ picture > img {
 }
 
 #about > div.intro > div {
+  text-align: center;
+}
+
+/* ---------------- INTERESTS ---------------- */
+section#interests {
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: var(--light);
+  opacity: 1;
+}
+
+#interests > div.intro > h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--sec);
+}
+
+#interests > div.intro > p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+#interests > div.intro > div {
   text-align: center;
 }
 
